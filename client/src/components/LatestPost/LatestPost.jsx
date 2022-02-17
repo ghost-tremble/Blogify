@@ -6,7 +6,7 @@ const LatestPost = () => {
   return (
     <div className='latest'>
      
-        <Img background="linear-gradient(-90deg, rgb(73, 173, 240), rgb(150, 40, 104));" height="300px" width ="50%"/>
+        <Img background="linear-gradient(45deg,rgb(131, 7, 161), rgb(240, 26, 26));" height="300px" width ="50%"/>
        
        <Content/>
         

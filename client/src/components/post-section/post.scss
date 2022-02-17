@@ -1,0 +1,29 @@
+@import "../../styles/themprovide.scss";
+.post-con {
+  display: grid;
+  grid-template-columns: repeat(3, 1.5fr);
+  row-gap: 30px;
+
+  .card {
+    display: flex;
+    width: 300px;
+    margin-right: 2rem;
+    flex-direction: column;
+    margin-bottom: 23px;
+    .card-image {
+    }
+    .card-content {
+      margin-top: 13px;
+      h1 {
+        @include boldfont;
+        padding: 5px;
+      }
+
+      h4 {
+        color: $nav-col;
+        @include boldfont;
+        padding: 5px;
+      }
+    }
+  }
+}
