@@ -1,0 +1,21 @@
+@import "../../styles/themprovide.scss";
+
+.latest {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  .content {
+    width: 50%;
+    margin-left: 25px;
+    height: 300px;
+    h1 {
+      @include boldfont;
+      font-size: 3rem;
+    }
+
+    h4 {
+      color: $nav-col;
+      @include boldfont;
+    }
+  }
+}

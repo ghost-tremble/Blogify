@@ -1,0 +1,27 @@
+// containing theme styles and general styling
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+
+$bg-col: #e4e6ec;
+$nav-col: #989dc4;
+$acc-color: #fff;
+$font: "Open Sans", sans-serif;
+
+@mixin boldfont {
+  font-family: $font;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  @include boldfont;
+}
+
+body {
+  background-color: $bg-col;
+}

@@ -1,0 +1,45 @@
+@import "../../styles/themprovide.scss";
+nav {
+  color: $nav-col;
+  display: flex;
+  margin-top: 10px;
+  padding: 10px 14px;
+  .user-circle {
+    height: 3em;
+    width: 3em;
+    background: linear-gradient(45deg, rgb(206, 73, 240), rgb(240, 165, 26));
+    border-radius: 100%;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      @include boldfont;
+      color: $acc-color;
+      font-size: x-large;
+    }
+  }
+
+  .menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      display: inline;
+      padding: 4px 8px 20px;
+      margin-right: 2rem;
+      &:hover {
+        color: hsl(338, 84%, 71%);
+        border-bottom: 1px solid hsl(338, 84%, 71%);
+      }
+      @include boldfont;
+
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
