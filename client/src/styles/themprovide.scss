@@ -11,6 +11,10 @@ $font: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
+@mixin buttons {
+  @include boldfont;
+}
+
 * {
   margin: 0;
   padding: 0;

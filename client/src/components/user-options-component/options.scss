@@ -1,0 +1,40 @@
+@import "../../styles/themprovide.scss";
+
+.options {
+  height: 100px;
+  width: 400px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 0.6rem;
+  padding: 10px;
+  top: 70px;
+
+  left: 40px;
+  display: none;
+
+  div {
+    @include buttons;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+
+    &:nth-child(2):hover {
+      background-color: rgb(80, 128, 231);
+      color: #fff;
+      cursor: pointer;
+    }
+    &:nth-child(1):hover {
+      background-color: rgba($color: $nav-col, $alpha: 0.8);
+
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
