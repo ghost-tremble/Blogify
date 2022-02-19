@@ -26,6 +26,13 @@ h3 {
   @include boldfont;
 }
 
-body {
+body,
+html {
+  padding: 0;
+  margin: 0;
   background-color: $bg-col;
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100vh;
 }

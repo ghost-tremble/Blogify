@@ -4,9 +4,38 @@ import "./navbar.scss"
 import  accImg from "../../assets/acc-img.png";
 import Options from '../user-options-component/Options';
 
+import {Link} from "react-router-dom"
+import Mobile from '../mobileNav/Mobile';
 
+  export const navData =[
+    
+
+    {
+    name:"  Home",
+    path:"/"
+  },
+
+  {
+    name:"Blog",
+    path:"/"
+  },
+  {
+    name:"recents",
+    path:"/"
+  },
+  {
+    name:"collections",
+    path:"/"
+  },
+  {
+    name:"Books",
+    path:"/"
+  },
   
+  
+]
 const Navbar = () => {
+  
   
 
  //close option  user   clicks out
@@ -33,7 +62,8 @@ useOutsideAlerter(wrapperRef)
   return (
     <>
       <nav ref={wrapperRef}>
-          <div className='user-circle'  onClick={()=>{
+        <div className='nav-header'>
+        <div className='user-circle'  onClick={()=>{
             
             if(!isOpen){
               setIsOpen(true)
@@ -46,17 +76,34 @@ useOutsideAlerter(wrapperRef)
               {userName ?<span>{userName.charAt(0)}</span> : <span><img src={accImg} height='30px' width="30px" alt='account-icon'/></span> }
               
               
+          
+              <Options isOpen={isOpen}/>
+          
+          
           </div>
-          <Options isOpen={isOpen}/>
+      
+            
+         <Mobile/>
+        </div>
+        
           <div className='menu'>
-          <ul>
-              <li><a> Home</a></li>
-              <li><a> Blog</a></li>
-              <li><a> Recents</a></li>
-              <li><a> Collections</a></li>
-              <li><a> Books</a></li>
-          </ul>
+          {navData.map((data,index) => {
+            const { name, Path } = data;
+            return (
+              <li key={index}>
+       <Link
+                  to={Path}
+                 
+                  >
+                  {name}
+                </Link>{" "}
+          
+    
+              </li>
+            );
+          })}
           </div>
+       
          
           </nav>  
     </>

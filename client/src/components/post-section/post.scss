@@ -1,28 +1,37 @@
 @import "../../styles/themprovide.scss";
-.post-con {
-  display: grid;
-  grid-template-columns: repeat(3, 1.5fr);
-  row-gap: 30px;
+.post-section {
+  .title-mini {
+    font-size: 24px;
+    color: $nav-col;
+    margin: 0px 0px 50px 0px;
+  }
+  .post-con {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 30px;
 
-  .card {
-    display: flex;
-    width: 300px;
-    margin-right: 2rem;
-    flex-direction: column;
-    margin-bottom: 23px;
-    .card-image {
-    }
-    .card-content {
-      margin-top: 13px;
-      h1 {
-        @include boldfont;
-        padding: 5px;
-      }
+    .card {
+      display: flex;
+      width: 100%;
+      margin-right: 2rem;
+      flex-direction: column;
+      margin-bottom: 23px;
 
-      h4 {
-        color: $nav-col;
-        @include boldfont;
-        padding: 5px;
+      .card-content {
+        margin-top: 13px;
+        h1 {
+          @include boldfont;
+          padding: 5px;
+        }
+
+        h4 {
+          color: $nav-col;
+          @include boldfont;
+          padding: 5px;
+        }
       }
     }
   }
