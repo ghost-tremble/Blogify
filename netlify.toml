@@ -1,4 +1,4 @@
 # netlify.toml
 [build]
-base = /client
+base = "/client"
 command = "webpack" 
