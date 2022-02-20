@@ -1,8 +1,8 @@
 @import "../../styles/themprovide.scss";
 
 .options {
-  height: 100px;
-  width: 400px;
+  height: 80px;
+  width: 40%;
   background-color: #fff;
   position: absolute;
   border-radius: 0.6rem;
@@ -11,14 +11,29 @@
 
   left: 40px;
   display: none;
-
+  @media screen and (max-width: 760px) {
+    width: 60%;
+  }
   div {
     @include buttons;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
+    margin: 5px;
+    padding: 0;
+    a {
+      color: $nav-col;
+      text-decoration: none;
 
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      &:hover {
+        color: #fff;
+      }
+    }
     &:nth-child(2):hover {
       background-color: rgb(80, 128, 231);
       color: #fff;

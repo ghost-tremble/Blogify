@@ -1,0 +1,61 @@
+@import "../../../styles/themprovide.scss";
+.login {
+  height: 100vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font;
+  .sign-in {
+    max-width: 100%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $nav-col;
+    padding: 30px 30px;
+
+    height: 70%;
+    .title {
+      margin: 10px 0;
+    }
+    span {
+      font-size: large;
+    }
+    div {
+      p {
+        cursor: pointer;
+        color: $pr-color;
+        padding: 15px;
+        font-weight: 500;
+        font-family: $font;
+        transition: 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        &:hover {
+          color: rgb(131, 15, 160);
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      @include buttons;
+      color: #fff;
+    }
+  }
+}
+.sign-in {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+
+  .title {
+    margin: 10px 0;
+  }
+  .buttons {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}

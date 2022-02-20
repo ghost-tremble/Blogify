@@ -13,7 +13,7 @@
     h1 {
       @include boldfont;
       font-size: 3rem;
-      text-align: justify;
+      text-align: left;
     }
 
     h4 {
@@ -24,6 +24,7 @@
   }
   @media screen and (max-width: 760px) {
     flex-direction: column;
+
     div {
       width: 100%;
       margin-bottom: 15px;

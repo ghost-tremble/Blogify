@@ -9,6 +9,9 @@ padding:${props=>props.padding || "1rem"} ;
 background-color:${props=>props.background || "red"};
 margin-right:10px;
 border-radius:.2rem;
+display:flex;
+justify-content:center;
+align-items:center;
 
 
 `
