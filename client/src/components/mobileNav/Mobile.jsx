@@ -18,11 +18,11 @@ const Mobile = () => {
         
           <ul id="menu">
           {navData.map((data,index) => {
-            const { name, Path } = data;
+            const { name, path } = data;
             return (
               <li key={index}>
        <Link
-                  to={Path}
+                  to={path}
                  
                   >
                   {name}
