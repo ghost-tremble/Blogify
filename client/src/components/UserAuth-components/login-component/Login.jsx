@@ -56,7 +56,7 @@ class Login extends React.Component{
                     onChange={this.handleChange}/>
                 
  <div>
- <Link >
+ <Link to="/forgotpassword" >
  <p>forgot password</p>
      </Link>
      
