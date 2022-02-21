@@ -15,6 +15,11 @@
     padding: 30px 30px;
 
     height: 70%;
+
+    @media screen and (max-width: 560px) {
+      border: none;
+    }
+
     .title {
       margin: 10px 0;
     }
@@ -22,6 +27,9 @@
       font-size: large;
     }
     div {
+      a {
+        text-decoration: none;
+      }
       p {
         cursor: pointer;
         color: $pr-color;

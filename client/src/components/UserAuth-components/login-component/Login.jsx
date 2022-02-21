@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import { CustomButton } from "../../styledComponents/Components";
 import FormInput from "../form-input-component/FormInput";
 
@@ -55,11 +56,17 @@ class Login extends React.Component{
                     onChange={this.handleChange}/>
                 
  <div>
-     <p>forgot password</p>
+ <Link >
+ <p>forgot password</p>
+     </Link>
+     
  </div>
  <div className="buttons">
  <div>
+     <Link to='/signup'>
      <p>create account</p>
+     </Link>
+     
  </div>
 <CustomButton background="rgb(206, 73, 240)" >Login</CustomButton>
  </div>
